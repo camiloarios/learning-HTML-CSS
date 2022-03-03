@@ -54,7 +54,34 @@
       la mala practica de generar scroll en los usurios asi
       se disfruta mas la pagina.
 
-      medida em 
+      medida em
+      Se hace a partir de los tamaños que viene por defecto
+      o de su padre directo, por ello hay que tener cuidado
+      con su uso. 
+      
+      medida rem
+      es similar pero siempre toma los datos bases del html,
+      es decir los que vinen por defecto
+      truco para usar rem a pixeles 
+      definir el font-size del html n 62,5%
+      
+        html{
+          font-size: 62,5;
+        }
+       
+        de aquien adelnte si queremos algo con 20px 
+        llamriamos asi(por ejemplo un parrafo)
+
+          p{
+            font-size: 2rem
+          }
+
+        Asi susesivamente , es una regla de tres si lo vemos
+
+      Min y Max width
+      
+
+
      
 
 */

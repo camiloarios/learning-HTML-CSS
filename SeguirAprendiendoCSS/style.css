@@ -1,5 +1,13 @@
 /* Medidas em*/
 
 .text-container {
-  font-size: 5em;
+  font-size: 1.5em;
+}
+.text-container div {
+  font-size: 1.5em;
+}
+
+/* Medidas rem*/
+.rem {
+  font-size: 1.5rem;
 }
