@@ -1,0 +1,60 @@
+/*
+  CSS se indeza a HTML pormedio de la etiqueta link
+  en el html
+
+  CSS actua sobre etiquetas o clases
+  Anatomia de CSS
+
+    Selector{
+      proerty: property value
+    }
+
+ proerty y property valuese conoce como declaracion
+
+  CSS es el estilo de HTML que es la estructura
+   BEM enseña como darnombres a las clases
+   
+   Más sobre pseudo elementos o clases
+   https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-classes
+   https://developer.mozilla.org/es/docs/Web/CSS/Pseudo-elements
+
+   Para entender CSS es bueno verlo como Modelos de cajas
+   https://developer.mozilla.org/es/docs/Web/CSS/box-sizing
+   
+   Herencia y especifidad
+    1.Importancia
+    2.Especificidad
+    3.Orden en las fuentes
+
+      1. Carga estilo de defecto del navegador, luego los css
+      de nuestro .css y finalmente los important
+      2. Important     1,0,0,0,0
+          Iline Styles 0,1,0,0,0 Estil envevido
+          #id          0,0,1,0,0
+          .class       0,0,0,1,0
+          tag          0,0,0,0,1
+
+          https://www.codecaptain.io/tools/css-specificity-calculator
+      3. Orden en que se llaman los estilos siendo los ultimos
+      los ultimos en mostrarse al final
+
+      Estilo envebido s usar css en el html directamente
+      esto es una mala practica
+
+
+    Combiaciones 
+      https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/Selectors/Combinators
+      Juego para practicar combinaciones
+      https://flukeout.github.io/
+
+    Medidas Relativas y absoltas
+     Absolutas (px no cambian)
+     Relativas (porcentaje, em, rem (es decir un root elemt)
+      Es bueno usar medidas relativas porque quita 
+      la mala practica de generar scroll en los usurios asi
+      se disfruta mas la pagina.
+
+      medida em 
+     
+
+*/

@@ -1,0 +1,98 @@
+p {
+  color: blue;
+  font-size: 20px;
+}
+
+/*clases generales*/
+.parrafo {
+  color: red;
+}
+
+/*id Unicos y especificos*/
+#texto {
+  color: yellow;
+  font-size: 30px;
+}
+
+/*Otros*/
+
+.main-nav {
+  margin-top: 10px;
+  list-style: none;
+  padding-left: 0;
+  background-color: #13a4a4;
+}
+
+.main-nav__item {
+  display: inline-block;
+}
+
+.main-nav__item a {
+  color: white;
+  padding: 5px;
+  border-radius: 2px;
+  text-decoration: none;
+}
+
+/*pseudo clases */
+.main-nav__item a:hover {
+  color: blue;
+}
+
+.main-nav__item a:active {
+  color: red;
+}
+
+/* pseudo elementos*/
+.main-nav__item a::after {
+  content: " | ";
+}
+
+/* Otros*/
+.main {
+  width: 100%;
+  height: 500px;
+  border: 10px solid grey;
+  padding: 20px 35px;
+}
+/* Selecto universal*/
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* Selector universal y box-sizingayuda a no hacer scroll horizontal ayuda mucho*/
+
+/* Herencias
+
+Fuentes y valores por defecto qu da el navegador*/
+
+html {
+  font-size: 75%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  font-size: inherit; /*Heredar: De su padre cercano en este caso html*/
+}
+
+/* Como romper la herencia? */
+
+/* Combinacions General */
+h2 ~ p {
+  color: red;
+}
+/* p tiene de hermano general el h2 */
+
+/* Padre e hijo, descendiente */
+/* Combinacions Chill */
+div > p {
+  color: red;
+}
+/* p hijo directo de div, asi se lee*/
+
+/* Combinacions descendente*/
+div p {
+  color: orange;
+}
+/* p contenido en div, asi se lee*/
