@@ -11,3 +11,47 @@
 .rem {
   font-size: 1.5rem;
 }
+
+/* Buenas practicas */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/*viewport widht vw, y view port
+heigth vh esto es en porcentaje*/
+
+main {
+  width: 100vw;
+  height: 100vh;
+  background-color: fuchsia;
+}
+
+section {
+  width: 80%;
+  /*Maximo y minimo de un contenedor*/
+  min-width: 320px;
+  max-width: 500px;
+  height: 500px;
+  background-color: red;
+  margin: 0 auto;
+}
+
+.parent {
+  border: 2px black dotted;
+  display: inline-block;
+}
+
+.box {
+  display: inline-block;
+  background-color: red;
+  width: 100px;
+  height: 100px;
+}
+
+#uno {
+  background-color: green;
+  position: relative;
+  bottom: 10px;
+}
