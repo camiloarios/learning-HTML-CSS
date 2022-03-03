@@ -55,3 +55,46 @@ section {
   position: relative;
   bottom: 10px;
 }
+
+/*Variables : sirve para reutilizar codigo*/
+:root {
+  /*--nombreDeLaVariable*/
+  --primary-color: #003476;
+  --secundary-color: #b4d2f7;
+  --header-size: 4rem;
+  --font: 1.8rem;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  /*Llamar variable*/
+  background-color: var(--primary-color);
+}
+
+main {
+  width: 100vw;
+  height: 70vh;
+  font-size: var(--font);
+}
+
+h1 {
+  font-size: 4rem;
+  background-color: var(--primary-color);
+}
+
+footer {
+  width: 100vw;
+  height: 15vh;
+  background-color: var(--secundary-color);
+}
+
+/*Web fonts : En este ejemplo es para todo el html */
+
+html {
+  font-family: "Playfair Display", serif;
+}

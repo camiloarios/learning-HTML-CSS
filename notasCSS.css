@@ -92,6 +92,51 @@
 
           juego https://flexboxfroggy.com/#es
 
+      
+      Fuentes 
+          Como puedo saber que fuentes trae mi pc o navegador,
+          se miran en configuraicones, diseño, fuentes.
+          Pero si queremos fuentes especiales vamos a
+          https://fonts.google.com/
+          Escoger fuente, luego embeber  y las añadimos(importar) en head como link
+          , lo ideal es tener una sola fuente.
+          
+
+        Reponsive design: 
+          Media queries (Siempre se ponen al final como buena practica
+          asi poder ver donde son los cambios de cel a table etc) 
+            break point
+          @media (pantalla mas pequeña)
+          @media (pantalla meidana)
+          @media (pantalla grande)
+
+        Proyectos hacerlos dese la perpectiva 
+        Mobile first/only
+
+        Una buena practica, es llamar los estilos en el head para
+        celular, luego para table y finalmente para desktop
+        si en diferentes archivos css.
+        Como se utiliza ahora en la industria 
+        Mostly Fluid: De celular a PC
+
+        Layout shifter : hacer que se muevan los contenedores 
+        
+        Column drop. Vamos jugando con el porcentaje de los 
+        porcentajes del weigth y asi que ocupen los contenedores 
+        las lineas completas de acuerdo al tamaño de la pantalla
+        
+          La idea es mirar hasta que puntos se ve bien el 
+          proyecto y apartir de cual generar un break point 
+          , una buena practica es no tener mas de 6 break point, 
+
+          Pagna recomentada para ver y estar al dia con temas de 
+          html y css: https://www.smashingmagazine.com/
+
+          Grid layouts
+          
+
+
+
 
       
 
