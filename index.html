@@ -1,177 +1,92 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
   <head>
-    <!-- lo importante para el navegador funcione>
-        < etiqutas meta dice al navegar com funcioa la pagi>-->
     <meta charset="UTF-8" />
-    <!--< para utilizar caracteres especiales>-->
-    <meta name="description" content="Esta pagina es para..." />
-    <!--< ayuda en CEO para buscador localize pagina>-->
-    <meta name="robots" content="index,follow" />
-    <!--< paraque los robots sigan la paguina>
-          <title>titulo de la paguina</title>-->
-    <meta name="viewport" content="width=divice-width, iniial-scale=1.0" />
-    <!--< para que pagina sea reponsive>-->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Google</title>
 
-    <!--< otras etiquetas>
-          < indezar el css>-->
     <link rel="stylesheet" href="./style.css" />
   </head>
   <body>
-    <!--tipo de etiqueta de contenido y contenedoras>
-        < contenedoras>-->
     <header>
-      <nav></nav>
-    </header>
-    <main>
-      <a href="./SeguirAprendiendoCSS/index.html">Continuo CSS</a>
-      <p> Debo poner las clases de forma que se note cada una en una pag difernte, es mas entendible</p>
-      <a href="./MostlyFluidCSS/index.html">ResponsiveCSS</a>
-      <a href="./ImagenesResponsive/index.html">ImagesResponsiveCSS</a>
-      <section>
-        <article></article>
-      </section>
-      <section>
-        <ul></ul>
-        <!-- lista desordenada -->
-        <li>elemento de la lista</li>
-        <ol></ol>
-        <!-- lista ordenada-->
-      </section>
-    </main>
-    <footer></footer>
-
-    <p>Soy un parrafo</p>
-    <h1>Soy un titulo</h1>
-    <h6>Soy un titulo más</h6>
-    <a href="url"> Soy un link </a>
-
-    <figure>
-      <!--Conteneor para la imagen, darle tamaño etc-->
-      <img src="./img_y_video/img.jpg" alt="Descripcion de la imagen" />
-      <figcaption>
-        Describe imagen, una especie de titulo, decripcion de pie
-      </figcaption>
-    </figure>
-
-    <video src="./img_y_video/video.mp4" controls preload="auto"></video>
-
-    <!--Formularios
-    Generar buenos formularios, agradables para el usuario
-    -->
-    <div>
-      <input type="text" />
-    </div>
-    <!--Mala practica mejor con un form-->
-
-    <form action="">
-      <!--en action iria a url donde va la informacio de form-->
-      <label for="nombre">
-        <span>¿Pregunta a responder</span>
-        <input
-          type="text"
-          id="nombre"
-          name="nombre"
-          placeholder="texto ejemplo"
-          autocomplete="name"
-          required
-        />
-        <!--type hay muchos. Ejmplo: date,number,time,week,month; Más ejemplos:https://developer.mozilla.org/es/docs/Web/HTML/Element/input
-             id igual al for del label, 
-             autocomplete ayuda autorellenar ciertainformacion name, cuontry etc,
-            requird son campos del formlario nesesrio casi oblgatorios,
-            y el name es para decir como se enviara la informacion-->
-      </label>
-      <label for="fecha">
-        <span>¿Pregunta a responder</span>
-        <input type="date" id="fecha" />
-      </label>
-
-      <label>
-        <input type="submit" />
-        <!--Enviar el formulario, a base de dato-->
-      </label>
-    </form>
-
-    <!--Otro estilo de formulario es con select -->
-    <main>
-      <span>¿Pregunta a responder con options</span>
-      <select name="cursos" id="">
-        <option value="JS">JS</option>
-        <option value="CSS3">CSS3</option>
-        <option value="HTML5">HMTL5</option>
-      </select>
-
-      <!--Que pasa si son muchas opcioes, dar opcions de acuerdo alo que alla llenando-->
-      <span>¿Pregunta a responder con muchas option</span>
-      <input list="cursos" />
-      <datalist id="cursos">
-        <option value="JS">JS</option>
-        <option value="CSS3">CSS3</option>
-        <option value="HTML5">HMTL5</option>
-      </datalist>
-
-      <!--Exsten otros tipos e bonton en los formularios
-         y estos son summit y botton(este no envia la informcion OJO)-->
-      <p>Compara estilos de botones Submit y buttum</p>
-      <input type="submit" />
-      <button>Enviar, con button(cb)</button>
-      <button type="submit">Enviar,cb+submit</button>
-    </main>
-
-    <main>
-      <p>CSS</p>
-      <p>Parrafo general</p>
-      <p class="parrafo">parrafo con class</p>
-      <p id="texto">parrafo con id</p>
-
-      <section>
-        <ul class="main-nav">
-          <li class="main-nav__item"><a href""></a>/>element</li>
-          <li class="main-nav__item"><a href""></a>element1</li>
-
-          <!--No se bien como se maneja la etiqueta a dentrt de otra etiqueta
-          si la cierro normal </a> o basta con poner /> -->
-          <li class="main-nav__item"><a href""></a>element2</li>
-          <li class="main-nav__item"><a href""/>element3</li>
+      <nav>
+        <ul class="nav-rigth-section">
+          <li>
+            <a href="">Gmail </a>
+          </li>
+          <li><a href="">Imagenés</a></li>
+          <li class="menu-icon">
+            <!--Tenia un icono de imagenpero se ve muy feo mejor 
+            me traigo el iconohecho por google, es mas pro-->
+            <svg class="gb_Se" focusable="false" viewBox="0 0 24 24">
+              <path
+                d="M6,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM6,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM12,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM16,6c0,1.1 0.9,2 2,2s2,-0.9 2,-2 -0.9,-2 -2,-2 -2,0.9 -2,2zM12,8c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,14c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2zM18,20c1.1,0 2,-0.9 2,-2s-0.9,-2 -2,-2 -2,0.9 -2,2 0.9,2 2,2z"
+              ></path>
+            </svg>
+            <a href=""> </a>
+          </li>
+          <li><button>Iniciar sesión</button></li>
         </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section>
+        <img src="googlelogo_color_272x92dp.png" />
       </section>
 
-      <section class="main">
-        <h1>Soy el titulo</h1>
+      <section>
+        <div class="main-input">
+          <!--Copiando las formas de google-->
+          <svg focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+          <input type="text"></input>
+          <svg style="cursor: pointer" focusable="false" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path fill="#4285f4" d="m12 15c1.66 0 3-1.31 3-2.97v-7.02c0-1.66-1.34-3.01-3-3.01s-3 1.34-3 3.01v7.02c0 1.66 1.34 2.97 3 2.97z"></path><path fill="#34a853" d="m11 18.08h2v3.92h-2z"></path><path fill="#fbbc05" d="m7.05 16.87c-1.27-1.33-2.05-2.83-2.05-4.87h2c0 1.45 0.56 2.42 1.47 3.38v0.32l-1.15 1.18z"></path><path fill="#ea4335" d="m12 16.93a4.97 5.25 0 0 1 -3.54 -1.55l-1.41 1.49c1.26 1.34 3.02 2.13 4.95 2.13 3.87 0 6.99-2.92 6.99-7h-1.99c0 2.92-2.24 4.93-5 4.93z"></path></svg>
+        </div>
         <div>
-          <p>Soy el parrafo</p>
+          <button>Buscar en Google</button>
+          <button>Me siento con suerte</button>
         </div>
       </section>
+
+      <section>
+        <span>
+          Ofecido por Google en: <span class="underline">Español (Latinoamérica)</span>
+        </span>
+      </section>
     </main>
 
-    <div>
-      <h1>Combinacioadores CSS</h1>
-      <h2>Soy un h2</h2>
-      <p>Soy un p</p>
-      <h2>Soy un h2</h2>
-      <h3>Soy un h3</h3>
-      <p>Soy un p</p>
-    </div>
-    <div>
-        
-    <main>
+    <footer>
       <div>
-        <article>
-          <p>Soy texto1</p>
-        </article>
-        <article>
-            <p>Soy texto2</p>
-          </article>
-        <section>
-          <div>
-            <p>Soy texto3</p>
-          </div>
-        </section>
-        <p>Soy texto4</p>
+        <p>Colombia</p>
       </div>
-    </main>
-    
-    
+      <section>
+        <ul class="footer-l">
+          <li>
+            <span>Sobre Google</span>
+          </li>
+          <li>
+            <span>Publicidad</span>
+          </li>
+          <li>
+            <span>Negocios</span>
+          </li>
+          <li>
+            <span>Cómo funciona la Búsqueda</span>
+          </li>
+        </ul>
+        <ul class="footer-r">
+          <li>
+            <span>Privacidad</span>
+          </li>
+          <li>
+            <span>Condiciones</span>
+          </li>
+          <li>
+            <span>Preferencias</span>
+          </li>
+        </ul>
+      </section>
+    </footer>
   </body>
 </html>
