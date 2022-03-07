@@ -1,0 +1,181 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 13px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 60px;
+}
+
+header nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+header nav .nav-rigth-section {
+  width: 250px;
+  height: auto;
+  display: flex;
+  list-style: none;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav .nav-rigth-section li:hover {
+  text-decoration: underline;
+}
+
+nav .nav-rigth-section li {
+  margin-right: 10px;
+  color: #000000;
+}
+
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+nav .nav-rigth-section .menu-icon {
+  /*background-image: url('https://icon-library.com/images/google-menu-icon/google-menu-icon-2.jpg');
+*/
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  width: 25px;
+  height: 25px;
+  cursor: pointer;
+}
+
+header nav .nav-rigth-section .menu-icon:hover {
+  background-color: #eee;
+  border-radius: 18px;
+}
+
+nav .nav-rigth-section button {
+  background-color: #63a0ef;
+  color: #ffffff;
+  padding: 0.45em;
+  border-radius: 5px;
+  cursor: pointer;
+  border: none;
+}
+header nav .nav-rigth-section button:hover {
+  background: #2b7de9;
+  -webkit-box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%),
+    0 1px 3px 1px rgb(66 133 244 / 15%);
+  box-shadow: 0 1px 2px 0 rgb(66 133 244 / 30%),
+    0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+main {
+  margin-top: 150px;
+  text-align: center;
+}
+main section {
+  width: 530px;
+  margin: 0 auto;
+  margin-bottom: 35px;
+}
+
+main section div.main-input {
+  width: 525px;
+  border-radius: 100px;
+  border: 1px solid #dfe1e5;
+  display: flex;
+  justify-content: center;
+  align-items: centers;
+  margin-bottom: 35px;
+  height: 40px;
+}
+
+main .main-input input {
+  width: 450px;
+  height: 37px;
+  border: none;
+  outline: none;
+}
+
+main .main-input svg {
+  height: 25px;
+  margin: 5px;
+  padding: 3px;
+}
+
+main section div.main-input:hover {
+  box-shadow: 0 1px 6px 0 #20212447;
+  border-color: #dfe1e500;
+}
+
+main section div button {
+  height: 36px;
+  background-color: #f8f9fa;
+  border: 0;
+  font-size: 14px;
+  color: #5e6264;
+  border-radius: 5px;
+  padding: 0 15px;
+  margin-right: 15px;
+}
+
+main section div button:hover {
+  box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+  background-color: #f8f9fa;
+  border: 1px solid #dadce0;
+  color: #202124;
+}
+
+main section span .underline {
+  color: #1a0dab;
+}
+
+main section span .underline:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+footer {
+  background-color: #f2f2f2;
+  color: #888c90;
+}
+
+footer div p {
+  padding: 15px 30px;
+  border-bottom: 1px solid #dadce0;
+  font-size: 15px;
+}
+
+footer section {
+  align-items: center;
+  font-size: 13px;
+  padding: 0 20px;
+  justify-content: space-evenly;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+footer section ul {
+  margin: 10px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  padding-left: 0;
+}
+
+footer section ul .footer-l {
+  justify-self: left;
+}
+
+footer section ul .footer-r {
+  justify-self: end;
+}
+
+footer section ul li {
+  margin: 10px;
+}
+
+footer section ul li:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
